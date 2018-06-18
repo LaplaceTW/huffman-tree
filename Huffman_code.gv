@@ -1,0 +1,48 @@
+// The Binary Tree of Huffman code
+digraph {
+	N [label=""]
+	N -> N0
+	N -> N1
+	N1 [label=1]
+	N1 -> N10
+	N1 -> N11
+	N0 [label=0]
+	N0 -> N00
+	N0 -> N01
+	N11 [label=11]
+	N11 -> N110
+	N11 -> N111
+	N111 [label="[o] : 111" fontcolor=blue shape=box]
+	N110 [label="[!] : 110" fontcolor=blue shape=box]
+	N01 [label=01]
+	N01 -> N010
+	N01 -> N011
+	N10 [label=10]
+	N10 -> N100
+	N10 -> N101
+	N100 [label="[ ] : 100" fontcolor=blue shape=box]
+	N00 [label=00]
+	N00 -> N000
+	N00 -> N001
+	N000 [label="[n] : 000" fontcolor=blue shape=box]
+	N010 [label=010]
+	N010 -> N0100
+	N010 -> N0101
+	N0101 [label="[i] : 0101" fontcolor=blue shape=box]
+	N0100 [label="[y] : 0100" fontcolor=blue shape=box]
+	N011 [label=011]
+	N011 -> N0110
+	N011 -> N0111
+	N0111 [label="[d] : 0111" fontcolor=blue shape=box]
+	N0110 [label="[P] : 0110" fontcolor=blue shape=box]
+	N001 [label=001]
+	N001 -> N0010
+	N001 -> N0011
+	N0011 [label="[t] : 0011" fontcolor=blue shape=box]
+	N0010 [label="[s] : 0010" fontcolor=blue shape=box]
+	N101 [label=101]
+	N101 -> N1010
+	N101 -> N1011
+	N1011 [label="[g] : 1011" fontcolor=blue shape=box]
+	N1010 [label="[h] : 1010" fontcolor=blue shape=box]
+}
